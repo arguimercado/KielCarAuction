@@ -1,0 +1,13 @@
+services:
+  auctiondb:
+    image: postgres
+
+  carauction.api:
+    image: ${DOCKER_REGISTRY-}carauctionapi
+    build:
+      context: .
+      dockerfile: Services/CarAuction/CarAuction.API/Dockerfile
+
+volumes:
+  pgdata: 
+

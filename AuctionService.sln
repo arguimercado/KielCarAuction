@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernels", "SharedKernels", "{F940B626-C191-4AE5-838E-5B45A2BE7E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "SharedKernels\BuildingBlocks\BuildingBlocks.csproj", "{F460A995-56BD-AF58-DF85-631216FE5A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainBlocks", "SharedKernels\DomainBlocks\DomainBlocks.csproj", "{A45176BA-445A-6FB5-E283-EE603EBA9E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarAuction.API", "Services\CarAuction\CarAuction.API\CarAuction.API.csproj", "{829BF02A-4BDA-4E3A-A037-C712CC8726D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CarAuction", "CarAuction", "{A0C1B1F6-A967-4B03-A281-4C7B0F527158}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F460A995-56BD-AF58-DF85-631216FE5A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F460A995-56BD-AF58-DF85-631216FE5A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F460A995-56BD-AF58-DF85-631216FE5A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F460A995-56BD-AF58-DF85-631216FE5A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45176BA-445A-6FB5-E283-EE603EBA9E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45176BA-445A-6FB5-E283-EE603EBA9E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45176BA-445A-6FB5-E283-EE603EBA9E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45176BA-445A-6FB5-E283-EE603EBA9E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829BF02A-4BDA-4E3A-A037-C712CC8726D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829BF02A-4BDA-4E3A-A037-C712CC8726D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829BF02A-4BDA-4E3A-A037-C712CC8726D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829BF02A-4BDA-4E3A-A037-C712CC8726D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F460A995-56BD-AF58-DF85-631216FE5A7B} = {F940B626-C191-4AE5-838E-5B45A2BE7E20}
+		{A45176BA-445A-6FB5-E283-EE603EBA9E7D} = {F940B626-C191-4AE5-838E-5B45A2BE7E20}
+		{829BF02A-4BDA-4E3A-A037-C712CC8726D7} = {A0C1B1F6-A967-4B03-A281-4C7B0F527158}
+		{A0C1B1F6-A967-4B03-A281-4C7B0F527158} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {919799D2-1750-44D1-9FEE-E82A023B57F0}
+	EndGlobalSection
+EndGlobal
