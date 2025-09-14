@@ -16,6 +16,7 @@ namespace CarAuction.API.Commons.Extensions
             {
                 cfg.RegisterServicesFromAssembly(typeof(ApplicationService).Assembly);
                 cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
+                cfg.AddOpenBehavior(typeof(LoggingBehavior<,>));
             });
 
             // Register FluentValidation
