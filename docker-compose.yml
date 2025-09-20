@@ -2,6 +2,9 @@ services:
   auctiondb:
     image: postgres
 
+  searchdb:
+    image: mongo
+
   carauction.api:
     image: ${DOCKER_REGISTRY-}carauctionapi
     build:
@@ -10,4 +13,4 @@ services:
 
 volumes:
   pgdata: 
-
+  mongodata:
